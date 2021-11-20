@@ -1,0 +1,49 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html, body {
+    // 10px div by def of 16px
+    font-size: 62.5%;
+    height: 100%;
+    width: 100%;   
+}
+
+body {
+    box-sizing: border-box;
+    background-color: $colour-primary-main;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include mobile-only {
+        margin-top: map-get($map: $img-height, $key: mobile);
+    }
+    
+}
+
+main {
+    display: flex;
+    max-width: 1100px;
+    max-height: 446px;
+    margin: auto;
+    
+    @include mobile-only {
+        flex-direction: column-reverse;
+        justify-content: baseline;
+        max-width: map-get($map: $img-width, $key: mobile);
+        text-align: center;
+        max-height: auto;
+        height: auto;
+        padding-left: $padding-lr-mobile;
+        padding-right: $padding-lr-mobile;
+        margin:auto;
+        background-repeat: repeat;
+
+    }
+}
+

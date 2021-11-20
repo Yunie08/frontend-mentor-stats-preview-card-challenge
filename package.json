@@ -1,0 +1,13 @@
+{
+  "name": "stats-preview-card-component-main",
+  "version": "1.0.0",
+  "description": "Frontend mentor - Stats preview card companent challenge",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./style.css ",
+    "prefix" :"postcss ./style.css --use autoprefixer -d ./prefixed/"
+  },
+  "author": "Ambre Gorias",
+  "license": "ISC",
+  "browserslist" : "last 4 versions"
+}
